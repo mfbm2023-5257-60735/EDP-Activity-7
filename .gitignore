@@ -1,0 +1,8 @@
+.vs/ 
+bin/ 
+obj/ 
+*.user 
+*.suo 
+myPetShopfolder/.vs/ 
+myPetShopfolder/bin/ 
+myPetShopfolder/obj/ 
