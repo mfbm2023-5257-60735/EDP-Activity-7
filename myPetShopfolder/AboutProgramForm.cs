@@ -23,5 +23,10 @@ namespace PetShopInventory
         {
             // Left empty intentionally
         }
+
+        private void lblDescription_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
