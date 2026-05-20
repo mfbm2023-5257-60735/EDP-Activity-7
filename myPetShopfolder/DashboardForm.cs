@@ -217,5 +217,10 @@ namespace PetShopInventory
         {
             Application.Restart();
         }
+
+        private void lblLogo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
