@@ -5,6 +5,7 @@
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.Panel panelSidebar;
         private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.Label lblLogoIcon;
         private System.Windows.Forms.Label lblLogo;
         private System.Windows.Forms.Button btnNavInventory;
         private System.Windows.Forms.Button btnReport;
@@ -44,12 +45,13 @@
         {
             this.panelSidebar = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnUserManagement = new System.Windows.Forms.Button(); // Instantiated here
+            this.btnUserManagement = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
             this.btnNavInventory = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.lblLogo = new System.Windows.Forms.Label();
+            this.lblLogoIcon = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
             this.pnlCard1 = new System.Windows.Forms.Panel();
             this.lblCardTitle1 = new System.Windows.Forms.Label();
@@ -78,7 +80,7 @@
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
             this.panelSidebar.Controls.Add(this.btnLogout);
-            this.panelSidebar.Controls.Add(this.btnUserManagement); // Added to sidebar
+            this.panelSidebar.Controls.Add(this.btnUserManagement);
             this.panelSidebar.Controls.Add(this.btnAbout);
             this.panelSidebar.Controls.Add(this.btnReport);
             this.panelSidebar.Controls.Add(this.btnNavInventory);
@@ -93,6 +95,7 @@
             // 
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
@@ -102,88 +105,104 @@
             this.btnLogout.TabIndex = 0;
             this.btnLogout.Text = "Log Out";
             // 
-            // btnUserManagement (THE NEW BUTTON)
+            // btnUserManagement
             // 
             this.btnUserManagement.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUserManagement.FlatAppearance.BorderSize = 0;
+            this.btnUserManagement.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
             this.btnUserManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUserManagement.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnUserManagement.ForeColor = System.Drawing.Color.White;
-            this.btnUserManagement.Location = new System.Drawing.Point(0, 245);
+            this.btnUserManagement.Location = new System.Drawing.Point(0, 267);
             this.btnUserManagement.Name = "btnUserManagement";
             this.btnUserManagement.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnUserManagement.Size = new System.Drawing.Size(220, 55);
             this.btnUserManagement.TabIndex = 5;
-            this.btnUserManagement.Text = "Users";
+            this.btnUserManagement.Text = "👥 Users";
             this.btnUserManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnAbout
             // 
             this.btnAbout.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAbout.FlatAppearance.BorderSize = 0;
+            this.btnAbout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
             this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbout.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnAbout.ForeColor = System.Drawing.Color.White;
-            this.btnAbout.Location = new System.Drawing.Point(0, 190);
+            this.btnAbout.Location = new System.Drawing.Point(0, 212);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnAbout.Size = new System.Drawing.Size(220, 55);
             this.btnAbout.TabIndex = 1;
-            this.btnAbout.Text = "About";
+            this.btnAbout.Text = "ℹ️ About";
             this.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // Note: The broken Click event here was removed!
             // 
             // btnReport
             // 
             this.btnReport.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
             this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReport.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnReport.ForeColor = System.Drawing.Color.White;
-            this.btnReport.Location = new System.Drawing.Point(0, 135);
+            this.btnReport.Location = new System.Drawing.Point(0, 157);
             this.btnReport.Name = "btnReport";
             this.btnReport.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnReport.Size = new System.Drawing.Size(220, 55);
             this.btnReport.TabIndex = 2;
-            this.btnReport.Text = "Reports";
+            this.btnReport.Text = "📊 Reports";
             this.btnReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnNavInventory
             // 
             this.btnNavInventory.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNavInventory.FlatAppearance.BorderSize = 0;
+            this.btnNavInventory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
             this.btnNavInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNavInventory.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.btnNavInventory.ForeColor = System.Drawing.Color.White;
-            this.btnNavInventory.Location = new System.Drawing.Point(0, 80);
+            this.btnNavInventory.Location = new System.Drawing.Point(0, 102);
             this.btnNavInventory.Name = "btnNavInventory";
             this.btnNavInventory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnNavInventory.Size = new System.Drawing.Size(220, 55);
             this.btnNavInventory.TabIndex = 3;
-            this.btnNavInventory.Text = "Dashboard";
+            this.btnNavInventory.Text = "📦 Dashboard";
             this.btnNavInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(45)))), ((int)(((byte)(168)))));
             this.panelLogo.Controls.Add(this.lblLogo);
+            this.panelLogo.Controls.Add(this.lblLogoIcon);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 80);
+            this.panelLogo.Size = new System.Drawing.Size(220, 102);
             this.panelLogo.TabIndex = 4;
             // 
             // lblLogo
             // 
-            this.lblLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblLogo.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblLogo.AutoSize = true;
+            this.lblLogo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblLogo.ForeColor = System.Drawing.Color.White;
-            this.lblLogo.Location = new System.Drawing.Point(0, 0);
+            this.lblLogo.Location = new System.Drawing.Point(58, 67);
             this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(220, 80);
+            this.lblLogo.Size = new System.Drawing.Size(127, 32);
             this.lblLogo.TabIndex = 0;
             this.lblLogo.Text = "PET SHOP";
-            this.lblLogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLogo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblLogo.Click += new System.EventHandler(this.lblLogo_Click);
+            // 
+            // lblLogoIcon
+            // 
+            this.lblLogoIcon.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold);
+            this.lblLogoIcon.ForeColor = System.Drawing.Color.White;
+            this.lblLogoIcon.Location = new System.Drawing.Point(66, -3);
+            this.lblLogoIcon.Name = "lblLogoIcon";
+            this.lblLogoIcon.Size = new System.Drawing.Size(75, 71);
+            this.lblLogoIcon.TabIndex = 1;
+            this.lblLogoIcon.Text = "🐾";
+            this.lblLogoIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelContent
             // 
@@ -209,6 +228,7 @@
             this.pnlCard1.Controls.Add(this.lblCardValue1);
             this.pnlCard1.Location = new System.Drawing.Point(30, 80);
             this.pnlCard1.Name = "pnlCard1";
+            this.pnlCard1.Padding = new System.Windows.Forms.Padding(12);
             this.pnlCard1.Size = new System.Drawing.Size(220, 100);
             this.pnlCard1.TabIndex = 0;
             // 
@@ -241,6 +261,7 @@
             this.pnlCard2.Controls.Add(this.lblCardValue2);
             this.pnlCard2.Location = new System.Drawing.Point(270, 80);
             this.pnlCard2.Name = "pnlCard2";
+            this.pnlCard2.Padding = new System.Windows.Forms.Padding(12);
             this.pnlCard2.Size = new System.Drawing.Size(220, 100);
             this.pnlCard2.TabIndex = 1;
             // 
@@ -273,6 +294,7 @@
             this.pnlCard3.Controls.Add(this.lblCardValue3);
             this.pnlCard3.Location = new System.Drawing.Point(510, 80);
             this.pnlCard3.Name = "pnlCard3";
+            this.pnlCard3.Padding = new System.Windows.Forms.Padding(12);
             this.pnlCard3.Size = new System.Drawing.Size(220, 100);
             this.pnlCard3.TabIndex = 2;
             // 
@@ -303,6 +325,7 @@
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(104)))), ((int)(((byte)(200)))));
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(140)))), ((int)(((byte)(225)))));
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
@@ -317,7 +340,8 @@
             // 
             this.btnEdit.BackColor = System.Drawing.Color.White;
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.btnEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
@@ -332,7 +356,8 @@
             // 
             this.btnDelete.BackColor = System.Drawing.Color.White;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(245)))));
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
@@ -375,6 +400,7 @@
             this.Text = "Dashboard - Pet Shop";
             this.panelSidebar.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
             this.panelContent.ResumeLayout(false);
             this.panelContent.PerformLayout();
             this.pnlCard1.ResumeLayout(false);
